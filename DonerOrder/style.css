@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+	margin:  0;
+	padding: 0;
+	font-family: 'Pacifico', cursive;
+	background: white;
+}
+
+.main {
+	width: 80%;
+	margin: 30px;
+}
+
+.logo {
+	margin: 30px auto;
+	display: flex;
+	align-items: center;
+}
+
+ul { 
+	flex: 1;
+	text-align: right;
+}
+
+ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 25px;
+	font-size: 25px;
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 0 15px;
+	position:  relative;
+}
+
+ul li a::after {
+	content: '';
+	width:  0;
+	height: 10px;
+	background: purple;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -55px;
+	transition: 0.5s;
+}
+
+ul li a:hover::after {
+	width:  100%;
+}
+
+.banner {
+	display: flex;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+.left-column {
+	flex-basis: 50%;
+}
+
+.right-column {
+	flex-basis: 50%;
+	width: 100%;
+}
+
+.left-column h1 {
+	font-size: 100px;
+	font-family: sans-serif;
+}
+
+.left-column h3 {
+	font-size: 35px;
+	font-family: sans-serif;
+}
+
+span { 
+	color: purple;
+}
+
+.buttons button {
+	padding: 7px 30px;
+	margin-right: 15px;
+	outline: none;
+	border: 1px solid purple;
+	border-radius: 20px;
+	cursor: pointer;
+	color: purple;
+	background-color: transparent;
+	font-size: 35px;
+	font-family: sans-serif;
+}
+
+.about-section h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+.about-section p {
+	font-size: 50px;
+}
+
+.about-section {
+	margin-top: 80px;
+	margin-left: 180px;	
+}

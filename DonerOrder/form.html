@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Donerstan</title>
+      <style>
+      body{
+        background:purple;
+      }
+      .doner-form{
+        max-width: 350px;
+        margin: auto;
+        text-align: center;
+        border-radius: 5px;
+        background: white;
+        padding: 20px;
+      }
+      input[type=text] , select{
+        width: 100%;
+        padding:12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      input[type=submit]{
+        width:100%;
+        background: purple;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+      }
+      input[type=submit]:hover{
+        background: black;
+      }
+      </style>
+   </head>
+   <body>
+      <div class="doner-form">
+         <form>
+           <label for="NAME"><b><h1 style="color:purple;">Donerstan</h1></b></label><br>
+           <label for="name">Your name</label>
+           <input type="text" name="fullname" placeholder="Your name">
+           <label for="phone">Your phone number</label>
+           <input type="text" name="phone" placeholder="Your Phone number">
+           <label for="address">Your address</label>
+           <input type="text" name="address" placeholder="Your address">
+           <label for="doner">Your doner</label>
+           <select id="doner">
+             <option value="doner">Choose Doner</option>
+             <option value="doner with chicken">Doner with chicken</option>
+             <option value="doner with beef">Doner with beef</option>
+           </select>
+           <input type="submit" name="Order">
+         </form>
+      </div>
+   </body>
+</html>
